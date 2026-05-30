@@ -21,7 +21,7 @@ API REST backend para la plataforma **ProviEmplea**, desarrollada para el Depart
 
 ### 1. Clonar el repositorio
 ```bash
-git clone https://github.com/TU_USUARIO/proviemplea_eva3.git
+git clone https://github.com/ezequieltobar/proviemplea_eva3
 cd proviemplea_eva3
 ```
 
@@ -68,15 +68,15 @@ docker compose exec app php artisan l5-swagger:generate
 | Método | Endpoint                      | Descripción                  |
 |--------|-------------------------------|------------------------------|
 | GET    | /api/personas                 | Listar talentos (CV ciego)   |
-| POST   | /api/personas                 | Registrar nuevo talento       |
-| GET    | /api/personas/{id}            | Obtener talento por ID        |
-| PUT    | /api/personas/{id}            | Actualizar talento            |
-| DELETE | /api/personas/{id}            | Eliminar talento              |
-| PATCH  | /api/personas/{id}/validar    | Validar talento               |
+| POST   | /api/personas                 | Registrar nuevo talento      |
+| GET    | /api/personas/{id}            | Obtener talento por ID       |
+| PUT    | /api/personas/{id}            | Actualizar talento           |
+| DELETE | /api/personas/{id}            | Eliminar talento             |
+| PATCH  | /api/personas/{id}/validar    | Validar talento              |
 
 ### Empresas
-| Método | Endpoint                      | Descripción                  |
-|--------|-------------------------------|------------------------------|
+| Método | Endpoint                      | Descripción                   |
+|--------|-------------------------------|-------------------------------|
 | GET    | /api/empresas                 | Listar empresas               |
 | POST   | /api/empresas                 | Registrar empresa             |
 | GET    | /api/empresas/{id}            | Obtener empresa por ID        |
@@ -85,8 +85,8 @@ docker compose exec app php artisan l5-swagger:generate
 | PATCH  | /api/empresas/{id}/validar    | Validar empresa               |
 
 ### Administración
-| Método | Endpoint                              | Descripción                        |
-|--------|---------------------------------------|------------------------------------|
+| Método | Endpoint                              | Descripción                         |
+|--------|---------------------------------------|-------------------------------------|
 | GET    | /api/admin/contactos                  | Listar contactos solicitados        |
 | POST   | /api/admin/contactos                  | Registrar solicitud de contacto     |
 | PATCH  | /api/admin/contactos/{id}/estado      | Actualizar estado de contacto       |
